@@ -1,6 +1,6 @@
 ### Solutions
 
 -   ArcSight
--   LogRhytm
+-   LogRhythm
 -   Splunk
 
