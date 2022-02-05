@@ -1,10 +1,10 @@
-## Searches and Reports
+## Searches, Reports and Alerts
 
 - Searching
 
   ![image](https://user-images.githubusercontent.com/37131079/152657579-90f423dc-b7ab-42f1-9d69-9abbe73fa958.png)
 
-On the search bar, type in: 
+To search data from an index (e.g firewall data), on the search bar, type in: 
 ```ruby
   index = firewall
 ```
@@ -12,6 +12,11 @@ Assuming you have multiple firewall vendors data ingesting into the firewall ind
 ```ruby
   index = firewall sourcetype="palo:threat"
 ```
+You can set the time range you want to search for using the Time Range Picker at the right side of the search bar. OR you can include it in your search query as below. (Make sure to use the exact time format the data has)
+```
+index = firewall sourcetype="palo:threat" earliest=10/19/2018:00:00:00 latest=10/27/2018:00:00:00
+```
+[ Splunk Reference ](https://docs.splunk.com/Documentation/Splunk/8.2.4/Search/Specifytimemodifiersinyoursearch)
 - Dashboards
 
 ## Administrator
