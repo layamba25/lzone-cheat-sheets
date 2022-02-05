@@ -1,4 +1,4 @@
-## Searches, Reports and Alerts
+## Searches, Reports and Alerts | Dashboards
 
 - Searching
 
@@ -16,6 +16,7 @@ You can set the time range you want to search for using the Time Range Picker at
 ```
 index = firewall sourcetype="palo:threat" earliest=10/19/2018:00:00:00 latest=10/27/2018:00:00:00
 ```
+You can also include time modifier as: ``earliest = -24h@h latest=-2h@h``
 [ Splunk Reference ](https://docs.splunk.com/Documentation/Splunk/8.2.4/Search/Specifytimemodifiersinyoursearch)
 - Dashboards
 
