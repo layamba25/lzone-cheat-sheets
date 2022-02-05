@@ -9,7 +9,10 @@ On the search by type in:
 ```ruby
   index = firewall
 ```
-
+To Specify a firewall, add the "sourcetype"
+```ruby
+  index = firewall sourcetype="palo:threat"
+```
 - Dashboards
 
 ## Administrator
